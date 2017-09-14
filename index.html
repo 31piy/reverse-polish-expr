@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Expression parser</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .expression-area {
+      padding: 50px;
+      border: 1px #ccc dashed;
+      background: #eee;
+    }
+
+    .result {
+      margin-top: 15px;
+      border: 1px #ccc dashed;
+      padding: 50px;
+    }
+
+    .result.error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Expression Parser</h3>
+
+  <form id="expression-parser-form">
+    <div class="expression-area">
+      <label for="expression">Enter reverse-polish expression here</label>
+      <input type="text" id="expression" name="expression">
+      <button type="submit">Parse</button>
+    </div>
+
+    <div id="result" class="result">
+    </div>
+  </form>
+
+  <script src="jquery/dist/jquery.min.js"></script>
+  <script src="assets/index.js"></script>
+</body>
+
+</html>
